@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equip="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio- Anitha Kanagaraj</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c13979e737.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+  <div iclass="container">
+    <nav>
+      <img src="Images/AK5.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>Machine Learning Engineer </p>
+      <h1>Hi, I'm <span>Anitha</span><br> Kanagaraj</h1>
+    </div>
+  </div>
+
+</div>
+
+<!-- ----------------------about------------------------------    -->
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="Images/Ani.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p class="about-content">I’m a Master’s student in Artificial Intelligence at the University of Galway, with 6+ years of cross-functional experience spanning software engineering, automation, and academia. My professional journey includes impactful roles at leading IT firms such as Wipro, Infosys, and IBM, where I led cross-functional teams, scaled automation initiatives, and managed Digital workplace management Automation tools solutions. With a strong foundation in Applied Machine Learning, Automation, and cloud-native technologies, I specialize in architecting intelligent, scalable systems on AWS that drive efficiency and innovation. I thrive in high-impact, research-driven environments, developing AI-powered productivity tools, deploying scalable Machine Learning models in cloud environments, or designing sustainable tech infrastructures. My passion lies in bridging the gap between cutting-edge research and practical, real-world applications.</p>
+        <div class="tab-titles">
+          <p class="Tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="Tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="Tab-links" onclick="opentab('education')">Education</p>
+          <p class="Tab-links" onclick="opentab('certification')">certification</p>
+          <p class="Tab-links" onclick="opentab('achievements')">Achievements</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><i class="fa-solid fa-laptop-code"></i><span>   Programming Languages</span><br>Python, C++, HTML, CSS, C, SQL</li>
+            <li><i class="fa-regular fa-file-lines"></i><span>   Python Libraries</span><br>NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow, PyTorch, Keras, XGBoost, LightGBM</li>
+            <li><i class="fa-solid fa-terminal"></i><span>   Scripting & Shell</span><br>Unix/Linux Shell Scripting, Middleware: IBM MQ</li>
+            <li><i class="fa-solid fa-cloud-arrow-up"></i><span>   Cloud & Infrastructure</span><br>Cloud Platform: AWS (EC2, S3, Lambda, IAM, etc.), DevOps & MLOps: Docker, MLflow, Git, GitHub</li>
+            <li><i class="fa-solid fa-robot"></i><span>    Digital Workplace Automation Tools</span><br>Nexthink, Nanoheal, Blancco, Tachyon</li>
+            <li><i class="fa-solid fa-screwdriver-wrench"></i><span>    Development Tools & Environments</span><br>Jupyter Notebook, PyCharm, VS Code, Git, GitHub, MS Office Suite</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span class="exptitle">Engineering/IT Experience</span> <br><i class="fa-solid fa-calendar-days"></i><span>   Jun 2022 - Aug 2024</span><br>Senior Software Engineer: Team leader for Tachyon Application Service, Wipro Limited, Remote, India</li>
+            <li><i class="fa-solid fa-calendar-days"></i><span>   Apr 2021 -May 2022</span><br>Senior System Engineer: SME for Nexthink, Nanoheal, and Blancco Automation tools, Infosys Limited, Remote, India</li>
+            <li><i class="fa-solid fa-calendar-days"></i><span>   Sep 2018 -Apr 2021</span><br>Application Developer: Technical Support for Linux and IBM Middleware MQ, IBM India Pvt. Ltd, Chennai, India</li>
+            <li><span class="exptitle">Teaching Experience</span> <br><i class="fa-solid fa-calendar-days"></i><span>   Sep 2024 -Mar 2025</span><br>Graduate Teaching Assistant, University of Galway, Galway, Ireland</li>
+            <li><i class="fa-solid fa-calendar-days"></i><span>   Sep 2017 -May 2018</span><br>Pro-Term Lecturer, Salem College of Engineering and Technology, Salem, India</li>
+            <li><span class="exptitle">Volunteering Experience</span> <br><i class="fa-solid fa-calendar-days"></i><span>   Dec 2024 - Jan 2025</span><br>Volunteer Annotator, University of Galway, Ireland</li>
+            <li><span class="exptitle">Part-Time Experience</span> <br><i class="fa-solid fa-calendar-days"></i><span>   Oct 2024 - Present</span><br>Store Assistant, Mor Oil (Centra), Oranmore, Galway, Ireland</li>
+            
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><i class="fa-solid fa-calendar-days"></i><span>   Sep 2024 - Sep 2025</span><br>Master in Artificial Intelligence, University of Galway, Galway, Ireland</li>
+            <li><i class="fa-solid fa-calendar-days"></i><span>   Aug 2013 - May 2017</span><br>Bachelor of Engineering: Computer Science and Engineering, SNS College of Technology, India</li>
+            
+          </ul>
+        </div>
+        <div class="tab-contents" id="certification">
+          <ul>
+            <li><i class="fa-solid fa-certificate"></i><span>   AWS</span><br>AWS Certified Developer Associate (2020)</li>
+            <li><i class="fa-solid fa-certificate"></i><span>   Skill lync</span><br>SQL for Data Science, Advanced Python Programming, Data Analysis and Visualisation with Tableau</li>
+            <li><i class="fa-solid fa-certificate"></i><span>   Google</span><br>Generative AI, Introduction to Large Language Models, Responsible AI</li>
+            <li><i class="fa-solid fa-certificate"></i><span>   Goethe</span><br>Goethe Certification (German A1)</li>
+            <li><i class="fa-solid fa-certificate"></i><span>   IDP</span><br>International English Language Testing System (Academic)</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="achievements">
+          <ul>
+            <li><i class="fa-solid fa-award"></i><span>   Second Place, Invent For The Planet (IFTP) Ireland 2025</span><br>Innovated a sustainable timber foundation solution that significantly cuts carbon emissions in the construction industry, championing eco-friendly building practices.</li>
+            <li><i class="fa-solid fa-award"></i><span>   Bronze President's Award, Enterprise Challenge 2024</span><br>Recognized for exceptional participation and outstanding performance in the prestigious Enterprise Challenge, powered by Ideas Lab and sponsored by SAP.</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ----------------------Services------------------------------    -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="servies-list">
+      <div>
+        <i class="fa-solid fa-code-pull-request"></i>
+        <h2>Machine Learning</h2>
+        <p>Machine Learning is a subset of artificial intelligence (AI) that enables systems to automatically learn from data, identify patterns, and make decisions or predictions with minimal human intervention. Instead of being explicitly programmed, ML models improve their performance over time as they are exposed to more data.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+        <h2>Machine Learning2</h2>
+        <p>Machine Learning is a subset of artificial intelligence (AI) that enables systems to automatically learn from data, identify patterns, and make decisions or predictions with minimal human intervention. Instead of being explicitly programmed, ML models improve their performance over time as they are exposed to more data.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-list-check"></i>
+        <h2>Machine Learning3</h2>
+        <p>Machine Learning is a subset of artificial intelligence (AI) that enables systems to automatically learn from data, identify patterns, and make decisions or predictions with minimal human intervention. Instead of being explicitly programmed, ML models improve their performance over time as they are exposed to more data.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ----------------------portfolio------------------------------    -->
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-item">
+      <div class="work">
+        <img src="Images/Email.png">
+        <div class="layer">
+          <h3>Email management</h3>
+          <p>Developed DM-Me (Dynamic E-Mail Management for Efficiency), an AI-based solution to manage email overload for corporate employees. Focused on automating email prioritisation, summarisation, event integration, and task tracking to enhance productivity</p>
+          <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Images/wood.jpg">
+        <div class="layer">
+          <h3>Music generation</h3>
+          <p>Developed DM-Me (Dynamic E-Mail Management for Efficiency), an AI-based solution to manage email overload for corporate employees. Focused on automating email prioritisation, summarisation, event integration, and task tracking to enhance productivity</p>
+          <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="Images/musicgen.jpg">
+        <div class="layer">
+          <h3>Email management</h3>
+          <p>Developed DM-Me (Dynamic E-Mail Management for Efficiency), an AI-based solution to manage email overload for corporate employees. Focused on automating email prioritisation, summarisation, event integration, and task tracking to enhance productivity</p>
+          <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+<!-- ----------------------contact------------------------------    -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>anithakanagaraj899@gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i>+353 892675942</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/anithakanagaraj/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-square-github"></i></a>
+          <a href=""><i class="fa-solid fa-blog"></i></a>
+        </div>
+        <a href="Images/AnithaKanagaraj_Resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="E-Mail" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright <i class="fa-regular fa-copyright"></i> Anitha. All rights reserved. </p>
+  </div>
+</div>
+
+
+<script>
+
+  var tablinks=document.getElementsByClassName("Tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+<script>
+  var sidemenu=document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right="0";
+  }
+  function closemenu(){
+    sidemenu.style.right="-200px";
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby1kSN32ld-c7s-dI9dqVN08y3OTukuqAsFz81oaJNNTi1eASxOlQkWHN8VNq60bVo6gw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+      })
+      form.reset()
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
